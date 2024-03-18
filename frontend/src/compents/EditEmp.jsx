@@ -69,7 +69,7 @@ const EditEmployee = () => {
         <input className='bg-white border-2 border-violet-400 text-black my-3 placeholder-black ' placeholder='Enter Email' type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
         <input className='bg-white border-2 border-violet-400 text-black my-3 placeholder-black ' placeholder='Enter Phone Number' type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} />
 
-        {/* designation dropdown */}
+        /* designation dropdown */
 
 
         <label htmlFor="">Designation</label>
@@ -80,7 +80,7 @@ const EditEmployee = () => {
         </select>
 
 
-        {/* Gender radio button */}
+        /* Gender radio button */
 
         <label htmlFor="">Gender : </label><br />
         <input type="radio" id="male" name="gender" value="Male" checked={gender == 'Male'} onChange={(e) => setGender(e.target.value)} />
@@ -88,7 +88,7 @@ const EditEmployee = () => {
         <input type="radio" id="female" name="gender" value="Female" checked={gender == 'Female'} onChange={(e) => setGender(e.target.value)} />
         <label htmlFor="female"> Female </label><br />
 
-        {/* Courses check boxes */}
+      /* Courses check boxes */
 
         <label>Course :</label><br />
         <input type="checkbox" id="MCA" name="course" value="MCA" checked={courses.includes('MCA')} onChange={handleCheckboxChange} />
